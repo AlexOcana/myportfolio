@@ -16,7 +16,7 @@ const info = [
     {
         year: '2010-2014',
         school: 'UCM',
-        title: 'Phisical Education',
+        title: 'Physical Education',
         duration: '4 years',
         details: <>
             Graduate in Physical Education. <br />
