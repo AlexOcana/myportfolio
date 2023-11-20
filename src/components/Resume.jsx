@@ -1,5 +1,30 @@
 import React from 'react'
 import MeImg from '/yo4.jpeg'
+import EducationItem from './EducationItem'
+
+const info = [
+    {
+        year: '2023',
+        school: 'Ironhack Spain',
+        title: 'Full Stack developer',
+        duration: '(Bootcamp)',
+        details: <>
+            Consolidation of different code languages used in contemporary web programming. <br /> <br />
+            React, JavaScript (ES6), Node.js, MongoDB, Express, HTML 5 & CSS 3 (Bootstrap, Tailwind).
+        </>
+    },
+    {
+        year: '2010-2014',
+        school: 'UCM',
+        title: 'Phisical Education',
+        duration: '4 years',
+        details: <>
+            Graduate in Physical Education. <br />
+            English certification C1 (Cambridge Collegue)
+        </>
+    }
+]
+
 const Resume = () => {
     return (
         <>
@@ -30,33 +55,16 @@ const Resume = () => {
                 </div>
             </div>
 
-            const info = [
-            {
-                year: '2023',
-            company: 'Ironhack Spain',
-            title: 'Full Stack developer',
-            duration: '(Bootcamp)',
-            details: <>
-                Consolidation of different code languages used in contemporary web programming. <br /> <br />
-                React, JavaScript (ES6), Node.js, MongoDB, Express, HTML 5 & CSS 3 (Bootstrap, Tailwind).
-            </>
-    }
-            ]
-
-        
-              const Work = () => {
-                console.log(info);
-            return (
 
             <div id="work" className="max-2-[1040px] n-auto md:pl-20 p-5 py-5 ">
                 <h1 className='py-4 text-4xl font-bold text-center text-[#001b5e]'>
-                    Work
+                    Education
                 </h1>
-                {data.map((item, idx) => (
-                    <WorkItem
+                {info.map((item, idx) => (
+                    <EducationItem
                         key={idx}
                         year={item.year}
-                        company={item.company}
+                        school={item.school}
                         title={item.title}
                         duration={item.duration}
                         details={item.details}
@@ -64,11 +72,7 @@ const Resume = () => {
                 ))}
 
             </div>
-        </div >
         </>
-
-
-
 
     )
 
