@@ -5,36 +5,37 @@ import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 
 const Main = () => {
     return (
-        <div className="pt-20" id='main'>
-            <div className="flex gap-12 relative z-[1] justify-center ">
-                <img className="w-[40px] h-[40px]]" src="/azure.png" alt="" />
-                <img className="w-[40px] h-[40px] " src="/html.png" alt="" />
-                <img className="w-[40px] h-[40px]" src="/css33.png" alt="" />
-                <img className="w-[40px] h-[40px]" src="/js.png" alt="" />
-            </div>
-            <div className="pt-5 flex gap-12 relative z-[1] justify-center ">
+        <div className="pt-20 md:pt-10 lg:pt-5" id='main'>
+            <div className="flex sm:flex-row md:flex-row lg:flex-row flex-col">
+                <div className="flex flex-row gap-12 md:gap-9 lg:gap-4 md:pt-0 lg:pt-0 relative z-[1] justify-center lg:w-[33%]">
+                    <img className="w-[60px] h-[50px] md:w-[60px] md:h-[40px]  lg:w-[110px] lg:h-[90px]  lg:ml-3" src="/azure.png" alt="" />
+                    <img className="w-[40px] h-[40px]  lg:w-[80px] lg:h-[70px] " src="/html.png" alt="" />
+                    <img className="w-[40px] h-[40px]  lg:w-[80px] lg:h-[70px]" src="/css33.png" alt="" />
+                    <img className="w-[40px] h-[40px]  lg:w-[80px] lg:h-[70px]" src="/js.png" alt="" />
+                </div>
+                <div className="pt-5 md:pt-0 lg:pt-0 flex gap-6 md:gap-9 lg:gap-4 relative z-[1] justify-center lg:w-[33%]">
 
-                <img className="w-[40px] h-[40px]" src="/kubernetes.png" alt="" />
-                <img className="w-[40px] h-[40px]" src="/express.png" alt="" />
-                <img className="w-[40px] h-[40px]" src="/mongo.png" alt="" />
-                <img className="w-[40px] h-[40px]" src="/docker.png" alt="" />
-            </div>
-            <div className="pt-5 flex gap-12 relative z-[1] justify-center">
+                    <img className="w-[40px] h-[40px] lg:w-[90px] lg:h-[70px]" src="/kubernetes.png" alt="" />
+                    <img className="w-[40px] h-[40px] lg:w-[80px] lg:h-[70px]" src="/express.png" alt="" />
+                    <img className="w-[40px] h-[40px] lg:w-[80px] lg:h-[70px]" src="/mongo.png" alt="" />
+                    <img className="w-[40px] h-[40px] lg:w-[80px] lg:h-[70px]" src="/docker.png" alt="" />
+                </div>
+                <div className="pt-5 md:pt-0 lg:pt-0 flex  gap-12 md:gap-9 lg:gap-4 relative z-[1] justify-center lg:w-[33%]">
 
-                <img className="w-[40px] h-[40px]" src="/git.png" alt="" />
-                <img className="w-[40px] h-[40px]" src="/bootstrap.png" alt="" />
-                <img className="w-[40px] h-[40px]" src="/react.png" alt="" />
-                <img className="w-[40px] h-[40px]" src="/node.png" alt="" />
-
+                    <img className="w-[40px] h-[40px] lg:w-[80px] lg:h-[70px]" src="/git.png" alt="" />
+                    <img className="w-[40px] h-[40px] lg:w-[80px] lg:h-[70px]" src="/bootstrap.png" alt="" />
+                    <img className="w-[40px] h-[40px] lg:w-[80px] lg:h-[70px]" src="/react.png" alt="" />
+                    <img className="w-[40px] h-[40px] lg:w-[80px] lg:h-[70px]" src="/node.png" alt="" />
+                </div>
             </div>
             <img
-                className="w-screen h-[450px] object-cover object-left scale-x-[1] pt-5 "
+                className="w-screen h-[450px] lg:w-screen lg:h-[620px] object-cover object-left scale-x-[1] pt-5 "
                 src="/screenshot.jpg"
                 alt="remotework"
             />
-            <div className="w-full h-[700px] absolute top-0 left-0 bg-white/50  backdrop-blur-sm">
-                <div className="max-w-[500px] mt-20 h-full w-full flex flex-col justify-center lg:items-start items-center">
-                    <h1 className="sm:text-5xl text-3xl font-bold  text-gray-800">I'm Alejandro Ocaña</h1>
+            <div className="w-full h-[700px] lg:h-[740px] absolute top-0 left-0 bg-white/50  backdrop-blur-sm ">
+                <div className="sm:max-w-[500px]lg:max-w-[700px] mt-20 h-full w-full flex flex-col justify-center items-center lg:justify-center">
+                    <h1 className="sm:text-5xl text-3xl font-bold  lg:justify-center lg:text-center text-gray-800">I'm Alejandro Ocaña</h1>
                     <h2 className="flex sm:text-2xl text-2xl pt-4 text-gray-800">I'm a <TypeAnimation
                         sequence={[
                             'Web Developer', // Types 'One'

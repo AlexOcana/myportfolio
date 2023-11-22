@@ -18,7 +18,7 @@ const Projects = () => {
                 each project is a testament to our passion for
                 pushing boundaries and bringing ideas to life.
             </p>
-            <div className=" sm:grid-cols-3 gap-5">
+            <div className=" sm:grid-cols-3 gap-5 lg:flex md:flex sm:flex-row">
                 <ProjectItem img={ProjectImg1} title='DOM VideoGame Proyect' link='https://alexocana.github.io/PROYECTO-VIDEOJUEGO/' />
                 <ProjectItem img={ProjectImg2} title='HBS Proyect VideoGames API' link='https://github.com/AlexOcana/PROYECTO-VIDEOJUEGO' />
                 <ProjectItem img={ProjectImg3} title='REACT App for GYM' link='https://gym4life.netlify.app' />

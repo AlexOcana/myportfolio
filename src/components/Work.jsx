@@ -4,11 +4,11 @@ import WorkItem from './WorkItem'
 const data = [
     {
         year: '2023',
-        company: 'Ironhack Spain',
-        title: 'Full Stack developer',
-        duration: '(Bootcamp)',
+        company: 'UAX. Alfonso X University',
+        title: ' Teacher Assistant Web Developer',
+        duration: '3 months',
         details: <>
-            Consolidation of different code languages used in contemporary web programming. <br /> <br />
+            Teaching different code languages used in contemporary web programming to improve the tech knowledge of the university students. <br /> <br />
             React, JavaScript (ES6), Node.js, MongoDB, Express, HTML 5 & CSS 3 (Bootstrap, Tailwind).
         </>
     },

@@ -32,7 +32,7 @@ const Resume = () => {
                 <h1 className='py-4 text-4xl font-bold text-center text-[#001b5e]'>
                     About Me
                 </h1>
-                <div className='items-center justify-center flex flex-col'>
+                <div className='items-center justify-center flex flex-col md:flex-row lg:flex-row md:gap-10 lg:gap-10'>
                     <img className="items-center rounded-full w-[35%] h-[20%]" src={MeImg} alt="photoOfMe" />
                     <div className="py-2">
                         <p className="text-left max-w-[60ch] p-5">
